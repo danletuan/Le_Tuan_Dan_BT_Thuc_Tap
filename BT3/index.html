@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Nhân Viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Nhập Thông Tin Nhân Viên</h2>
+        <form id="employeeForm">
+            <label for="hoTen">Họ tên:</label>
+            <input type="text" id="hoTen" placeholder="Nhập họ tên..." required>
+            <small class="error-message"></small>
+
+            <label for="ngaySinh">Ngày sinh:</label>
+            <input type="date" id="ngaySinh" required>
+            <small class="error-message"></small>
+
+            <label for="soDienThoai">Số điện thoại:</label>
+            <input type="text" id="soDienThoai" placeholder="Nhập số điện thoại...">
+            <small class="error-message"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Nhập email..." required>
+            <small class="error-message"></small>
+
+            <label>Giới tính:</label>
+            <div class="gender-group">
+                <input type="radio" name="gender" value="Nam" id="male" required> <label for="male">Nam</label>
+                <input type="radio" name="gender" value="Nữ" id="female"> <label for="female">Nữ</label>
+                <input type="radio" name="gender" value="Khác" id="other"> <label for="other">Khác</label>
+            </div>
+            <small class="error-message"></small>
+
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" placeholder="Nhập địa chỉ...">
+            <small class="error-message"></small>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

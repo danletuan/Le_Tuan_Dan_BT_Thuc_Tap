@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <input type="file" id="uploadAvatar" accept="image/*" hidden>
+            <label for="uploadAvatar">
+                <img src="avt.jpg" alt="Ảnh đại diện" class="avatar" id="avatar">
+            </label>
+            <h1 class="name">Lê Tuấn Đan</h1>
+            <p class="description">
+                Xin chào! Tôi là Lê Tuấn Đan, sinh viên năm 4 ngành Khoa Học Dữ Liệu tại Đại học Khoa Học Tự Nhiên.
+            </p>
+
+            <h2 class="interests-title">Sở Thích</h2>
+            <ul class="interests-list" id="interestList"></ul>
+
+            <input type="text" id="newInterest" placeholder="Nhập sở thích mới...">
+            <button id="addInterest">Thêm</button>
+            <button id="clearAll">Xóa tất cả</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
