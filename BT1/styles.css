@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e842a8;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,6 +19,7 @@ body {
     width: 100%;
 }
 
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -29,7 +30,9 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 5px solid #ff9a9e;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .name {
