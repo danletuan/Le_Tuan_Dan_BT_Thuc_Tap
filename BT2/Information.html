@@ -4,28 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Giới Thiệu Bản Thân</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="profile">
-            <input type="file" id="uploadAvatar" accept="image/*" hidden>
-            <label for="uploadAvatar">
-                <img src="avt.jpg" alt="Ảnh đại diện" class="avatar" id="avatar">
-            </label>
-            <h1 class="name">Lê Tuấn Đan</h1>
-            <p class="description">
-                Xin chào! Tôi là Lê Tuấn Đan, sinh viên năm 4 ngành Khoa Học Dữ Liệu tại Đại học Khoa Học Tự Nhiên.
-            </p>
+        <div class="row">
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <input type="file" id="uploadAvatar" accept="image/*" hidden>
+                <label for="uploadAvatar">
+                    <img src="avt.jpg" alt="Ảnh đại diện" class="avatar" id="avatar">
+                </label>
+            </div>
+            <div class="col-8">
+                <h1 class="name">Lê Tuấn Đan</h1>
+                <h2 class="interests-title">Giới thiệu</h2>
+                <p class="description">
+                    Xin chào! Tôi là Lê Tuấn Đan, sinh viên năm 4 ngành Khoa Học Dữ Liệu tại Đại học Khoa Học Tự Nhiên.
+                </p>
 
-            <h2 class="interests-title">Sở Thích</h2>
-            <ul class="interests-list" id="interestList"></ul>
+                <h2 class="interests-title">Sở Thích</h2>
+                <ul class="interests-list" id="interestList"></ul>
 
-            <input type="text" id="newInterest" placeholder="Nhập sở thích mới...">
-            <button id="addInterest">Thêm</button>
-            <button id="clearAll">Xóa tất cả</button>
+                <input type="text" id="newInterest" placeholder="Nhập sở thích mới...">
+                <button id="addInterest">Thêm</button>
+                <button id="clearAll">Xóa tất cả</button>
+            </div>
         </div>
     </div>
 

@@ -14,8 +14,8 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 400px;
+    /* text-align: center; */
+    max-width: 800px;
     width: 90%;
     transition: transform 0.3s;
 }
@@ -49,6 +49,7 @@ body {
     font-size: 20px;
     color: #333;
     margin: 20px 0 10px;
+    font-weight: 600;
 }
 
 .interests-list {
@@ -60,9 +61,6 @@ body {
     font-size: 16px;
     color: #444;
     background: rgba(255, 255, 255, 0.6);
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,9 +77,20 @@ button {
     font-size: 14px;
 }
 
-button:hover {
-    background: #d63031;
+.btn-group {
+    display: flex;
+    gap: 5px; 
 }
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+
 
 input {
     padding: 8px;
