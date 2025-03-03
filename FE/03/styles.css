@@ -1,0 +1,147 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DBDBDB;
+    padding: 5px 15px;
+    border-bottom: 1px solid #dee2e6;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    height: 25px; 
+    margin-right: 5px;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #222222;
+    margin: 0;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+
+
+.icon-group {
+    display: flex;
+
+}
+
+.icon-box {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+}
+
+
+.bg-gray {
+    background-color: #C5C5C5;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.icon-box i {
+    font-size: 20px;
+    color: #000; 
+}
+
+.upload-file {
+    padding: 10px;
+    font-size: 14px;
+    border: 4px dashed #DBDBDB !important;
+}
+
+.note{
+    background-color: #f5f5f5;
+}
+
+
+.nav-tabs {
+    border: none;
+    background-color: #B7B7B6;
+    
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: black; 
+    border-radius: 0 !important;
+    background-color: #B7B7B6;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    font-weight: bold; 
+    background-color: #DBDBDB ;
+    color: black ; 
+}
+
+.custom-header {
+    background-color: #DBDBDB;
+    padding: 5px; 
+    font-size: 14px; 
+    height: 35px; 
+}
+
+
+.custom-header select {
+    font-size: 12px;  
+    height: 30px; 
+}
+
+
+.case-table thead {
+    position: sticky;
+    top: 0;
+    background: #DBDBDB !important; 
+    z-index: 2;
+}
+
+.case-table {
+    font-size: 14px;
+    table-layout: fixed; 
+    width: 100%;
+}
+
+.table-container {
+    max-height: 300px;  
+    overflow-y: auto;  
+    border: 1px solid #ddd; 
+}
+
+
+.case-table th, .case-table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; 
+}
+
+.dropdown .btn {
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+
+
+
+
+
+
+

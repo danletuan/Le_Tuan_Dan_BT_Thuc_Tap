@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu Hình Người Dùng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header-->
+    <div class="header">
+        <div class="header-left">
+            <img src="logo-minerva.png" alt="Logo" class="logo">
+            <h1>PHẦN MỀM CHUẨN ĐOÁN HÌNH ẢNH</h1>
+        </div>
+
+        <div class="header-right">
+
+            <select class="form-select bg-light">
+                <option>Đại học Y</option>
+                <option>Đại học Quốc Gia</option>
+                <option>Đại học Quốc Gia</option>
+                <option>Đại học Quốc Gia</option>
+            </select>
+
+            <div class="icon-group">
+                <div class="icon-box bg-gray"><i class="bi bi-folder"></i></div>
+                <div class="icon-box bg-white"><i class="bi bi-archive"></i></div>
+            </div>
+
+            <div class="icon-group">
+                <div class="icon-box bg-gray"><i class="bi bi-tv"></i></div>
+                <div class="icon-box bg-white"><i class="bi bi-layout-split"></i></div>
+            </div>
+
+            <div class="icon-box bg-white"><i class="bi bi-bar-chart"></i></div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-person-circle me-2"></i>
+                    Bs. Nguyễn Mạnh Hà
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#configModal">
+                            Cấu hình người dùng
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cài đặt</a></li>
+                    <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="d-flex flex-grow-1 overflow-hidden">
+        <div class="col-2 d-flex flex-column profile-list-container">
+            <div class="px-4 py-2 description">
+                <div class="d-flex align-items-center fs-6"><strong>Cấu hình</strong></div>
+            </div>
+            <div class="content flex-grow-1 overflow-auto">
+                <table class="table table-striped flex-grow-1">
+                    <tbody>
+
+                        <!-- Filter 1 -->
+                        <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-1">
+                            <td>
+                                <i class="bi ms-3 bi-caret-down-fill toggle-direction-icon"></i>
+                                <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <tr id="subfolder-1" class="collapse">
+                            <td class="ps-5">
+                                <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-1">
+                                    <i class="bi ms-3 bi-caret-down-fill toggle-direction-icon"></i>
+                                    <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                                </span>
+                            </td>
+                        </tr>
+                        <tr id="sub-subfolder-1" class="collapse">
+                            <td class="ps-5">
+                                <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                            </td>
+                        </tr>
+
+                        <!-- Filter 2 -->
+                        <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-2">
+                            <td>
+                                <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <tr id="subfolder-2" class="collapse">
+                            <td class="ps-5">
+                                <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-2">
+                                    <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                    <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                                </span>
+                            </td>
+                        </tr>
+                        <tr id="sub-subfolder-2" class="collapse">
+                            <td class="ps-5">
+                                <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                            </td>
+                        </tr>
+
+                        <!-- Filter 3 -->
+                        <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-3">
+                            <td>
+                                <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <tr id="subfolder-3" class="collapse">
+                            <td class="ps-5">
+                                <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-3">
+                                    <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                    <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                                </span>
+                            </td>
+                        </tr>
+                        <tr id="sub-subfolder-3" class="collapse">
+                            <td class="ps-5">
+                                <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <!-- Filter 4 -->
+                        <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-4">
+                            <td>
+                                <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <tr id="subfolder-4" class="collapse">
+                            <td class="ps-5">
+                                <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-4">
+                                    <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                    <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                                </span>
+                            </td>
+                        </tr>
+                        <tr id="sub-subfolder-4" class="collapse">
+                            <td class="ps-5">
+                                <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <!-- Filter 5 -->
+                        <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-5">
+                            <td>
+                                <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                            </td>
+                        </tr>
+                        <tr id="subfolder-5" class="collapse">
+                            <td class="ps-5">
+                                <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-5">
+                                    <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                    <i class="bi m-2 bi-folder2 toggle-folder-icon"></i> Tên Filter
+                                </span>
+                            </td>
+                        </tr>
+                        <tr id="sub-subfolder-5" class="collapse">
+                            <td class="ps-5">
+                                <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-10 d-flex flex-column user-profile">
+            <div class="px-4 py-2 description">
+                <div class="d-flex align-items-center fs-6"><strong>Cấu hình người dùng</strong></div>
+            </div>
+            <div class="m-3 content flex-grow-1 overflow-auto"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="configModal" tabindex="-1" aria-labelledby="configModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="configModalLabel">Cấu hình người dùng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex gap-2">
+                    <!-- Sidebar Danh Mục -->
+                    <div class="content flex-grow-1 overflow-auto col-4 modal-body-left">
+                        <table class="table table-striped flex-grow-1">
+                            <tbody>
+
+                                <!-- Filter 1 -->
+                                <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-1">
+                                    <td>
+                                        <i class="bi ms-3 bi-caret-down-fill toggle-direction-icon"></i>
+                                        Tên Filter
+                                    </td>
+                                </tr>
+                                <tr id="subfolder-1" class="collapse">
+                                    <td class="ps-5">
+                                        <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-1">
+                                            <i class="bi ms-3 bi-caret-down-fill toggle-direction-icon"></i>
+                                            </i> Tên Filter
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="sub-subfolder-1" class="collapse">
+                                    <td class="ps-5">
+                                        Tên Filter
+                                    </td>
+                                </tr>
+
+                                <!-- Filter 2 -->
+                                <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-2">
+                                    <td>
+                                        <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                        Tên Filter
+                                    </td>
+                                </tr>
+                                <tr id="subfolder-2" class="collapse">
+                                    <td class="ps-5">
+                                        <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-2">
+                                            <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                            Tên Filter
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="sub-subfolder-2" class="collapse">
+                                    <td class="ps-5">
+                                        <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                                    </td>
+                                </tr>
+
+                                <!-- Filter 3 -->
+                                <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-3">
+                                    <td>
+                                        <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                        Tên Filter
+                                    </td>
+                                </tr>
+                                <tr id="subfolder-3" class="collapse">
+                                    <td class="ps-5">
+                                        <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-3">
+                                            <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                            Tên Filter
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="sub-subfolder-3" class="collapse">
+                                    <td class="ps-5">
+                                        <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                                    </td>
+                                </tr>
+                                <!-- Filter 4 -->
+                                <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-4">
+                                    <td>
+                                        <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                        Tên Filter
+                                    </td>
+                                </tr>
+                                <tr id="subfolder-4" class="collapse">
+                                    <td class="ps-5">
+                                        <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-4">
+                                            <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                            Tên Filter
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="sub-subfolder-4" class="collapse">
+                                    <td class="ps-5">
+                                        <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                                    </td>
+                                </tr>
+                                <!-- Filter 5 -->
+                                <tr class="folder-row" data-bs-toggle="collapse" data-bs-target="#subfolder-5">
+                                    <td>
+                                        <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                        Tên Filter
+                                    </td>
+                                </tr>
+                                <tr id="subfolder-5" class="collapse">
+                                    <td class="ps-5">
+                                        <span data-bs-toggle="collapse" data-bs-target="#sub-subfolder-5">
+                                            <i class="bi ms-3 bi-caret-right-fill toggle-direction-icon"></i>
+                                            Tên Filter
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr id="sub-subfolder-5" class="collapse">
+                                    <td class="ps-5">
+                                        <i class="bi ms-4 me-2 bi-file-earmark"></i> Tên Filter
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Nội dung chính -->
+                    <div class="p-3 flex-grow-1 col-8 modal-body-right">
+                        <!-- Thông báo -->
+                        <div class="mb-3">
+                            <label class="form-label">Thông báo</label>
+                            <select class="form-select">
+                                <option>Value</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+
+                        <!-- Chia đôi màn hình -->
+                        <div class="mb-3">
+                            <label class="form-label">Chia đôi màn hình</label>
+                            <div class="container mt-4">
+                                <div class="split-screen-container">
+                                    <div class="d-flex flex-column">
+                                        <div class="split-option d-flex gap-2">
+                                            <div style="width: 60%;">Danh sách</div>
+                                            <div style="width: 40%;">Viewer</div>
+                                        </div>
+                                        <div class="split-label text-center mt-2">Tỷ lệ 60:40</div>
+                                    </div>
+
+                                    <div class="d-flex flex-column">
+                                        <div class="split-option active d-flex gap-2">
+                                            <div style="width: 50%;">Danh sách</div>
+                                            <div style="width: 50%;">Viewer</div>
+                                        </div>
+                                        <div class="split-label text-center mt-2">Tỷ lệ 50:50</div>
+                                    </div>
+
+                                    <div class="d-flex flex-column">
+                                        <div class="split-option d-flex gap-2">
+                                            <div style="width: 40%;">Danh sách</div>
+                                            <div style="width: 60%;">Viewer</div>
+                                        </div>
+                                        <div class="split-label text-center mt-2">Tỷ lệ 40:60</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-light" data-bs-dismiss="modal">Hủy bỏ</button>
+                    <button type="button" class="btn btn-primary">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
