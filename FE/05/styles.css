@@ -79,34 +79,30 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100vh; 
-    /* background-color: #DBDBDB; */
+    background-color: #DBDBDB !important; 
 }
 
 
 .description{
-    background-color: #DBDBDB;
+    background-color: #DBDBDB !important; 
     overflow-y: auto;
 }
 
 .content {
-    background-color: #DBDBDB;
+    background-color: #DBDBDB !important; 
     
 }
 
 
-.collapse {
-    border: none;
-}
-
-tr.collapse > td {
-    border-bottom: none !important;
-}
-
 .description-top, .description-bot {
+    background-color: #DBDBDB !important; 
     flex: 1; /* Chia đều chiều cao */
     overflow-y: auto;
     overflow-x: hidden;
     
+}
+.table-0{
+    background-color: #DBDBDB !important; 
 }
 
 
@@ -133,35 +129,53 @@ tr.collapse > td {
     z-index: 1000;
 }
 
-
 #myTabsContent {
     max-height: 400px; 
     overflow-y: auto;
 }
 
-
-
-
-
-.table-1, .table-2 {
-    max-height: 150px; /* Đặt chiều cao tối đa cho bảng */
-    overflow-y: auto; /* Thêm cuộn dọc */
-    border: none; /* Xóa viền bảng */
+.card-body {
+    background-color: #DBDBDB !important; 
 }
+
+
+
+
+.table-1 {
+    max-height: 250px; 
+    overflow-y: auto; 
+    border: none; 
+}
+.table-2 {
+    max-height: 150px; 
+    overflow-y: auto; 
+    border: none; 
+}
+
+th {
+    background-color: #DBDBDB !important; 
+    padding: 10px; 
+    border-top: 1px solid #C4C4C4; 
+    border-left: 1px solid #C4C4C4; 
+    border-right: 1px solid #C4C4C4;
+}
+
 
 .table thead {
-    background-color: #DBDBDB !important; /* Màu nền tiêu đề */
     position: sticky;
-    top: 0; /* Giữ tiêu đề cố định khi cuộn */
+    top: 0; 
     z-index: 2;
 }
-
+table {
+    border-collapse: separate; 
+    border-spacing: 0;
+}
 
 .toolbar {
     background-color: #DBDBDB;
     padding: 10px;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -192,4 +206,24 @@ tr.collapse > td {
     max-width: 100%;
     line-height: 1.2;
 }
+
+.upload-img{
+    background-color: #FFFFFF;
+    .card{
+    background-color: #F5F5F5;
+    border: 0;
+    }
+}
+
+
+.custom-label {
+    white-space: nowrap;
+    width: 120px;
+    margin-right: 5px; 
+}
+
+.custom-select {
+    flex-grow: 1;
+}
+
 

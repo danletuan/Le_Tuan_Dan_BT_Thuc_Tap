@@ -88,7 +88,7 @@
                 <div class="tab-content mt-2" id="myTabsContent">
                     <div class="tab-pane fade show active" id="filter-content" role="tabpanel">
                         <div class="content ">
-                            <table class="table table-striped flex-grow-1">
+                            <table class="table table-striped flex-grow-1 table-0">
                                 <tbody>
 
                                     <!-- Filter 1 -->
@@ -215,16 +215,16 @@
 
             <div class="vh-50 description-bot">
                 <!-- Tabs dưới -->
-                <ul class="nav nav-tabs nav-fill mt-3 " id="bottomTabs" role="tablist">
+                <ul class="nav nav-tabs nav-fill mt-3" id="bottomTabs" role="tablist">
                     <li class="nav-item">
                         <button class="nav-link active" id="info-tab" data-bs-toggle="tab"
-                            data-bs-target="#info-content" type="button">Thông tin ca</button>
+                            data-bs-target="#info-content" type="button">Thông tin</button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-link" id="preview-tab" data-bs-toggle="tab" data-bs-target="#preview-content"
                             type="button">Xem trước</button>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history-content"
                             type="button">Lịch sử</button>
                     </li>
@@ -311,7 +311,9 @@
 
         <div class="col-10 d-flex flex-column flex-grow-1 user-profile">
             <div class=" description">
-                <div class="px-4 py-2 d-flex align-items-center  fs-6"><strong>Danh sách ca</strong></div>
+                <div class="px-4 py-2 d-flex align-items-center  fs-6">
+                    <strong>Danh sách ca</strong>
+                </div>
                 <div class="container-fluid mt-2 p-3">
                     <div class="row g-2 align-items-center">
                         <div class="col-2">
@@ -402,7 +404,7 @@
                     <table class="table">
 
                         <thead>
-                            <tr>
+                            <tr >
                                 <th>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-all-1" type="checkbox"
@@ -437,7 +439,7 @@
                                 <td>Chụp XQuang ngực</td>
                                 <td>CT</td>
                             </tr>
-                            <tr>
+                            <tr class="table-primary">
                                 <td>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-1" type="checkbox">
@@ -453,7 +455,7 @@
                                 <td>Chụp XQuang ngực</td>
                                 <td>CT</td>
                             </tr>
-                            <tr>
+                            <tr class="table-success">
                                 <td>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-1" type="checkbox">
@@ -469,8 +471,8 @@
                                 <td>Chụp XQuang ngực</td>
                                 <td>CT</td>
                             </tr>
-                            <tr>
-                                <td class="table-primary">
+                            <tr class="table-warning">
+                                <td>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-1" type="checkbox">
                                         <label class="form-check-label">Chưa đọc</label>
@@ -485,8 +487,8 @@
                                 <td>Chụp XQuang ngực</td>
                                 <td>XA</td>
                             </tr>
-                            <tr>
-                                <td class="table-success">
+                            <tr class="table-danger">
+                                <td>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-1" type="checkbox">
                                         <label class="form-check-label">Chưa đọc</label>
@@ -502,7 +504,7 @@
                                 <td>CT</td>
                             </tr>
                             <tr>
-                                <td class="table-warning">
+                                <td>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-1" type="checkbox">
                                         <label class="form-check-label">Chưa đọc</label>
@@ -518,7 +520,23 @@
                                 <td>CT</td>
                             </tr>
                             <tr>
-                                <td class="table-danger">
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input select-row-1" type="checkbox">
+                                        <label class="form-check-label">Chưa đọc</label>
+                                    </div>
+                                </td>
+                                <td>Nguyen Van Hinh</td>
+                                <td>108432153</td>
+                                <td>1989</td>
+                                <td>Nam</td>
+                                <td>📩</td>
+                                <td>01/01/2018</td>
+                                <td>Chụp XQuang ngực</td>
+                                <td>CT</td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <div class="form-check">
                                         <input class="form-check-input select-row-1" type="checkbox">
                                         <label class="form-check-label">Chưa đọc</label>
@@ -769,37 +787,149 @@
                     </div>
 
                 </div>
-                
+
                 <div class="d-flex align-items-center justify-content-start p-2 custom-header">
-                    <div class="d-flex align-items-center">
-                        <button class="btn btn-light btn-sm me-2"><i class="bi bi-chevron-left"></i></button>
-                        <button class="btn btn-light btn-sm"><i class="bi bi-chevron-right"></i></button>
-                    </div>
                     <div class="ms-5">
-                        Trang
+                        Chuẩn đoán
                         <select class="form-select d-inline-block w-auto mx-2 ms-3">
                             <option>1</option>
-                            <option selected>2</option>
+                            <option selected>Lần 3 | Chuẩn đoán mới | BS Nguyễn Hùng</option>
                             <option>3</option>
                         </select>
                     </div>
                     <div class="ms-5">
-                        Hiển thị
+                        Dịch vụ
                         <select class="form-select d-inline-block w-auto mx-2 ms-3">
-                            <option>50</option>
-                            <option selected>100</option>
-                            <option>200</option>
+                            <option>1</option>
+                            <option selected>XA021 - XQuang chân</option>
+                            <option>3</option>
                         </select>
-                        ca | Tổng số ca: <strong>430</strong>
+                    </div>
+                    <div class="ms-5">
+                        Mẫu KQ
+                        <select class="form-select d-inline-block w-auto mx-2 ms-3">
+                            <option>1</option>
+                            <option selected>XA021 - XQuang chân</option>
+                            <option>3</option>
+                        </select>
                     </div>
                 </div>
-                
 
-               
+                <div class="upload-img ">
+                    <!-- Mô tả kỹ thuật chụp -->
+                    <div class="card p-3 mb-3 mx-3 ">
+                        <p>Kỹ thuật chụp: Chụp X-quang cột sống cổ thẳng nghiêng</p>
+                        <ul class="mb-0">
+                            <li>Không thấy gãy xẹp các đốt sống.</li>
+                            <li>Không thấy hẹp các khoảng liên đốt sống.</li>
+                            <li>Cấu trúc các đốt sống không thấy bất thường.</li>
+                        </ul>
+                        <p class="mt-2">Hiện tại không thấy hình ảnh bất thường xương cột sống cổ trên
+                            phim.</p>
+                    </div>
+
+                    <!-- Chọn ảnh -->
+                    <div class="card p-3 mb-3 mx-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="btn btn-light">
+                                <i class="bi bi-image"></i> Chọn ảnh
+                            </button>
+                            <img src="1.png" class="img-thumbnail" width="100">
+                            <img src="2.png" class="img-thumbnail" width="100">
+                            <img src="3.png" class="img-thumbnail" width="100">
+                            <img src="4.png" class="img-thumbnail" width="100">
+                        </div>
+                    </div>
+
+
+                    <!-- Chụp ảnh và tải lên -->
+                    <div class="card p-3 mx-3">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="d-flex flex-column gap-2">
+                                <button class="btn btn-primary">
+                                    <i class="bi bi-camera"></i> Chụp ảnh
+                                </button>
+                                <button class="btn btn-light">
+                                    <i class="bi bi-upload"></i> Tải lên
+                                </button>
+                                <button class="btn btn-light">
+                                    <i class="bi bi-gear"></i> Cấu hình
+                                </button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="5.png" class="img-thumbnail" width="100">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid p-2">
+                    <div class="row g-2 align-items-center m-3">
+                        <!-- Người ký -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Người ký</label>
+                            <select class="form-select custom-select">
+                                <option selected>BS Phạm Tuấn Tú</option>
+                            </select>
+                        </div>
+
+                        <!-- Mã bệnh ID -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Mã bệnh ID</label>
+                            <select class="form-select custom-select">
+                                <option selected>A1234</option>
+                            </select>
+                        </div>
+
+                        <!-- Thẻ tag -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Thẻ tag</label>
+                            <select class="form-select custom-select">
+                                <option selected>Tag name</option>
+                            </select>
+                        </div>
+
+                        <!-- Người chụp -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Người chụp</label>
+                            <select class="form-select custom-select">
+                                <option selected>BS Phạm Tuấn Tú</option>
+                            </select>
+                        </div>
+
+                        <!-- Y tá -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Y tá</label>
+                            <select class="form-select custom-select">
+                                <option selected>Lê Minh Thủy</option>
+                            </select>
+                        </div>
+
+                        <!-- Chẩn đoán trước -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Chẩn đoán trước</label>
+                            <select class="form-select custom-select">
+                                <option selected>Có</option>
+                            </select>
+                        </div>
+
+                        <!-- Giải phẫu -->
+                        <div class="col-md-3 d-flex align-items-center">
+                            <label class="form-label custom-label">Giải phẫu</label>
+                            <select class="form-select custom-select">
+                                <option selected>A1234</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
 
             </div>
-            
-            <div class="m-3 content flex-grow-1 overflow-auto"></div>
+
+            <!-- <div class="m-3 content flex-grow-1 overflow-auto"></div> -->
         </div>
     </div>
 
