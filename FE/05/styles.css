@@ -93,6 +93,15 @@ html, body {
     
 }
 
+.top-list{
+    background-color: #B7B7B6;
+    .list-item{
+        background-color: #DBDBDB;
+        width: 100%;
+        display: block;
+    }
+}
+
 
 .description-top, .description-bot {
     background-color: #DBDBDB !important; 
@@ -190,7 +199,7 @@ table {
 .btn-wrapper .btn {
     background-color: white;
     border: none;
-    width: 40px;
+    width: 50px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -207,7 +216,7 @@ table {
     line-height: 1.2;
 }
 
-.upload-img{
+.upload-img {
     background-color: #FFFFFF;
     .card{
     background-color: #F5F5F5;
@@ -224,6 +233,15 @@ table {
 
 .custom-select {
     flex-grow: 1;
+}
+
+
+.inf-form {
+    background-color: #B7B7B6; 
+    height: 27px; 
+    padding: 8px 8px; 
+    font-size: 14px;
+    border: 0;
 }
 
 
