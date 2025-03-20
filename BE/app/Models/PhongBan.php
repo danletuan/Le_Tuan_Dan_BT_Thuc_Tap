@@ -14,9 +14,16 @@ class PhongBan extends Model {
     protected $keyType = 'string'; // Nếu id_phong_ban là dạng string
 
     protected $fillable = ['id_phong_ban', 'ten_phong_ban'];
-    public function nhanViens() {
+
+    // Mối quan hệ với Nhân Viên
+    public function nhanVien()
+    {
         return $this->belongsToMany(NhanVien::class, 'nhan_vien_phong_ban', 'id_phong_ban', 'id_nhan_vien')
                     ->withPivot('chuc_vu');
+    }
+    public static function danhSachNhanVienTheoPhong()
+    {
+        return self::with('nhanViens')->get();
     }
     
 }

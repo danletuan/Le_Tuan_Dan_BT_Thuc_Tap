@@ -30,6 +30,7 @@ Route::prefix('nhanvien')->group(function () {
     Route::get('/', [NhanVienController::class, 'index']); // Lấy danh sách nhân viên
     Route::get('/{id}', [NhanVienController::class, 'show']); // Lấy 1 nhân viên theo ID
     Route::post('/', [NhanVienController::class, 'store']); // Thêm nhân viên
+    Route::get('/edit/{id}', [NhanVienController::class, 'edit']);
     Route::put('/{id}', [NhanVienController::class, 'update']); // Cập nhật nhân viên
     Route::delete('/{id}', [NhanVienController::class, 'destroy']); // Xóa nhân viên
 });

@@ -24,6 +24,11 @@ Route::get('/phongban', [PhongBanController::class, 'index']);
 Route::get('/nhanvienphongban', [NhanVienPhongBanController::class, 'index']);
 Route::get('/nhanvien/create', [NhanVienController::class, 'create']); // Hiển thị form
 Route::post('/nhanvien/store', [NhanVienController::class, 'store']); // Xử lý thêm nhân viên
+Route::get('/nhanvien/edit/{id}', [NhanVienController::class, 'edit']);
+Route::put('/nhanvien/{id}', [NhanVienController::class, 'update']);
+Route::delete('/nhanvien/{id}', [NhanVienController::class, 'destroy']);
+
+Route::get('/truyvan', [NhanVienController::class, 'truyvan'])->name('nhanvien.truyvan');
 
 Route::get('/', function () {
     return view('welcome');
