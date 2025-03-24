@@ -148,10 +148,15 @@ class NhanVienController extends Controller
                 $data = NhanVien::with('phongBan')->get();
                 break;
             case 'tong_luong':
-                $thang = $request->query('thang', date('m')); // Mặc định lấy tháng hiện tại
-                $data = Luong::where(DB::raw('MONTH(thang_nhan_luong)'), $thang)
-                ->sum('so_tien_luong');
+                $thangNam = $request->query('thang_nam', date('Y-m')); // Mặc định lấy tháng & năm hiện tại (YYYY-MM)
+                
+                list($nam, $thang) = explode('-', $thangNam); // Tách chuỗi thành năm và tháng
+                
+                $data = Luong::whereYear('thang_nhan_luong', $nam)
+                                ->whereMonth('thang_nhan_luong', $thang)
+                                ->sum('so_tien_luong');
                 break;
+                
             case 'nhan_vien_phong_ban':
                 $data = PhongBan::with('nhanVien')->get();
                 break;

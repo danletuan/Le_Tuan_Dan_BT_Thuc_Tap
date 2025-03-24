@@ -12,7 +12,7 @@
             <option value="nhan_vien_phong_ban" {{ request('queryType') == 'nhan_vien_phong_ban' ? 'selected' : '' }}>Nhân viên trong phòng ban</option>
         </select>
         
-        <input type="number" name="thang" placeholder="Nhập tháng (nếu cần)" value="{{ request('thang') }}">
+        <input type="month" name="thang_nam" value="{{ request('thang_nam') }}">
         
         <button type="submit">Truy vấn</button>
     </form>
